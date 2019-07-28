@@ -21,7 +21,7 @@ from multiprocessing.pool import Pool
 
 
 def save_data(data, league):
-    filename = "geoplayer/leagues/{}.csv".format(league)
+    filename = "playermap/leagues/{}.csv".format(league)
     with open(filename, 'a', encoding='gbk') as f:
         fieldnames = ['p_name', 'p_link', 'height', 'weight', 'nation', 'birth', 'pos']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
